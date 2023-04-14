@@ -1,0 +1,15 @@
+.books {
+  width: 50%;
+  background-color: #f2f2f2;
+  margin: auto;
+  margin-top: 100px;
+}
+.head {
+  background-color: #737373;
+}
+.book:nth-child(odd) {
+  background-color: #d9d9d9;
+}
+.book:nth-child(even) {
+  background-color: #bfbfbf;
+}
