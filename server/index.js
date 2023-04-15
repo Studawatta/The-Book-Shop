@@ -1,9 +1,11 @@
 const express = require('express');
 const mysql = require('mysql');
 const dotenv = require('dotenv');
+const cors = require('cors');
 const app = express();
 
 dotenv.config();
+app.use(cors());
 
 const db = mysql.createConnection({
   host: process.env.HOST,
@@ -21,9 +23,6 @@ const db = mysql.createConnection({
 // });
 app.use(express.json());
 
-app.get('/', (req, res) => {
-  res.json('hello this is the backend');
-});
 app.get('/books', (req, res) => {
   const q = 'SELECT * FROM books';
   db.query(q, (err, data) => {

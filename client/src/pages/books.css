@@ -1,15 +1,33 @@
-.books {
+.container {
   width: 50%;
-  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px 0px rgba(166, 166, 166, 1);
   margin: auto;
   margin-top: 100px;
 }
-.head {
-  background-color: #737373;
+.header {
+  display: flex;
+  background-color: aquamarine;
+  width: 100%;
+  border-radius: 5px;
 }
-.book:nth-child(odd) {
-  background-color: #d9d9d9;
+.headerItem {
+  flex: 1;
+  text-align: center;
+  padding: 10px 0 10px 0;
+  font-weight: bold;
 }
-.book:nth-child(even) {
-  background-color: #bfbfbf;
+.body {
+  margin-top: 20px;
+}
+.row {
+  display: flex;
+
+  margin-top: 5px;
+  background-color: aqua;
+}
+.rowItem {
+  flex: 1;
+  padding: 10px;
 }
